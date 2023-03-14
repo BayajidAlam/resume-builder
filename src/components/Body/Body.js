@@ -4,6 +4,7 @@ import { ArrowDown } from "react-feather";
 
 import Editor from "../Editor/Editor";
 import styles from "./Body.module.css";
+import Resume from "../Resume/Resume";
 
 function Body() {
 
@@ -96,12 +97,12 @@ function Body() {
           information={resumeInformation}
           setInformation={setResumeInformation}
         />
-        {/* <Resume
+        <Resume
           ref={resumeRef}
           sections={sections}
           information={resumeInformation}
           activeColor={activeColor}
-        /> */}
+        />
       </div>
     </div>
   );

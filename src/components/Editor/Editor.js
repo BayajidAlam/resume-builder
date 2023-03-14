@@ -12,7 +12,7 @@ function Editor(props) {
   const [activeSectionKey, setActiveSectionKey] = useState(
     Object.keys(sections)[0]
   );
-  
+
   const [activeInformation, setActiveInformation] = useState(
     information[sections[Object.keys(sections)[0]]]
   );
@@ -485,6 +485,7 @@ function Editor(props) {
     }
   };
 
+  
   const handleAddNew = () => {
     const details = activeInformation?.details;
     if (!details) return;

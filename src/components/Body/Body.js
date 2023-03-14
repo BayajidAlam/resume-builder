@@ -62,7 +62,7 @@ function Body() {
     },
   });
 
-  
+  console.log(resumeInformation);
   return (
     <div className={styles.container}>
       <p className={styles.heading}>Resume Builder</p>

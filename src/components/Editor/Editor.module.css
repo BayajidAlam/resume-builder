@@ -27,3 +27,31 @@
   border-bottom: 2px solid #239ce2;
   color: #239ce2;
 }
+
+.body{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.details .row{
+  display: flex;
+  gap: 20px;
+}
+
+.details .column{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.details .row >div{
+  flex: 1;
+}

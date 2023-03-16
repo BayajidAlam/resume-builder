@@ -30,6 +30,8 @@ const Resume = forwardRef((props, ref) => {
     other: information[sections.other],
   };
 
+  console.log(info);
+
   const getFormattedDate = (value) => {
     if (!value) return "";
     const date = new Date(value);
@@ -167,6 +169,7 @@ const Resume = forwardRef((props, ref) => {
           info.education?.sectionTitle ? "" : styles.hidden
         }`}
       >
+       
         <div className={styles.sectionTitle}>
           {info.education?.sectionTitle}
         </div>
@@ -179,7 +182,7 @@ const Resume = forwardRef((props, ref) => {
                 <span />
               )}
               {item.college ? (
-                <p className={styles.subTitle}>Some college name</p>
+                <p className={styles.subTitle}>{item.college}</p>
               ) : (
                 <span />
               )}
